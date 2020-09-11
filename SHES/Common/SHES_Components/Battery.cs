@@ -18,8 +18,7 @@ namespace Common.SHES_Components
             Capacity = capacity;
             ID = iD;
         }
- 
- 
+
         public Battery()
         {
 
