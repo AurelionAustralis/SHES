@@ -4,3 +4,9 @@ C:\Users\MilosTodorovic\Desktop\Original\SHES\SHES\Common\obj\Debug\Common.cspro
 C:\Users\MilosTodorovic\Desktop\Original\SHES\SHES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\MilosTodorovic\Desktop\Original\SHES\SHES\Common\obj\Debug\Common.dll
 C:\Users\MilosTodorovic\Desktop\Original\SHES\SHES\Common\obj\Debug\Common.pdb
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\bin\Debug\Common.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\bin\Debug\Common.pdb
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\obj\Debug\Common.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\obj\Debug\Common.pdb

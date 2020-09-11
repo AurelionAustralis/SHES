@@ -1,0 +1,16 @@
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\obj\Debug\Tests.csprojAssemblyReference.cache
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\obj\Debug\Tests.csproj.CoreCompileInputs.cache
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Tests.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Tests.pdb
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Common.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Common.pdb
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\obj\Debug\Tests.csproj.CopyComplete
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\obj\Debug\Tests.dll
+C:\Users\MilosTodorovic\Desktop\SHES\SHES\Tests\obj\Debug\Tests.pdb
