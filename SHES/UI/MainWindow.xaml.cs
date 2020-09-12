@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.Communication;
 using Common.SHES_Components;
 using Microsoft.Win32;
 using System;
@@ -60,6 +61,8 @@ namespace UI
         }
 
         private string powerString;
+
+        private SHESToComponentsQueues queues;
         public string PowerString
         {
             get
@@ -74,10 +77,15 @@ namespace UI
 
         public MainWindow()
         {
-            SHES = new SHES();
+            queues = new SHESToComponentsQueues();
+            SHES = new SHES(queues);
+            ShesDbContext dbContext = new ShesDbContext();
+            SHES.Batteries.List.AddRange(dbContext.Battery.ToList());
+            shes.Consumers.List.AddRange(dbContext.Consumers.ToList());
+            shes.SolarPanels.List.AddRange(dbContext.SolarPanels.ToList());
+
             InitializeComponent();
         }
-
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -171,34 +179,33 @@ namespace UI
         {
             while (true)
             {
-                DateTime CurrentTime = GlobalClock.Instance.GetCurrentTime();
-                int second = GlobalClock.Instance.Second;
-
-                SHES.CurrentPower += SHES.SolarPanels.Generate();
-
-                if (CurrentTime.Hour >= 3 && CurrentTime.Hour <= 6)
+                try
                 {
-                    SHES.CurrentPower += SHES.Batteries.Consume();
+                    double diff = SHES.GetDiff();
+                    Dispatcher.Invoke(() =>
+                    {
+                        txtBox_Power.Text = "" + SHES.CurrentPower;
+                    });
+
+                    Dispatcher.Invoke(() =>
+                    {
+                        txtBox_Diff.Text = "" + diff;
+                    });
                 }
-                else if (CurrentTime.Hour >= 14 && CurrentTime.Hour <= 17)
+                catch(Exception e)
                 {
-                    SHES.CurrentPower += SHES.Batteries.Generate();
+
                 }
 
-                SHES.CurrentPower += SHES.Consumers.Consume();
-
-                Dispatcher.Invoke(() =>
-                {
-                    txtBox_Power.Text = "" + SHES.CurrentPower;
-                });
-
-                await Task.Delay(second);
+                await Task.Delay(500);
             }
         }
 
         private void slider_sunPower_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             SHES.SolarPanels.SunPower = slider_sunPower.Value / 100;
+            Response r = new Response(shes.SolarPanels.SunPower, "");
+            queues.SolarReponses.Enqueue(r);
         }
     }
 }

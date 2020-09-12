@@ -30,10 +30,12 @@
         <TextBox x:Name="txtBox_ConsumerPower"  HorizontalAlignment="Left" Height="23" Margin="287,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Power" HorizontalAlignment="Left" Margin="224,267,0,0" VerticalAlignment="Top"/>
         <Button Content="Add" HorizontalAlignment="Left" Margin="428,47,0,0" VerticalAlignment="Top" Width="78" Height="23" Click="Button_Click"/>
-        <Label Content="Current power in SHES" HorizontalAlignment="Left" Margin="305,342,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Current power in SHES" HorizontalAlignment="Left" Margin="212,344,0,0" VerticalAlignment="Top" Width="132"/>
 
-        <TextBox  x:Name="txtBox_Power" Text="{Binding PowerString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="False" HorizontalAlignment="Left" Height="23" Margin="309,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox  x:Name="txtBox_Power" Text="{Binding PowerString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="False" HorizontalAlignment="Left" Height="23" Margin="216,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button_Simulate" Content="SIMULATE" HorizontalAlignment="Left" Margin="332,317,0,0" VerticalAlignment="Top" Width="75" Click="button_Simulate_Click"/>
+        <Label Content="Current diff in SHES" HorizontalAlignment="Left" Margin="402,344,0,0" VerticalAlignment="Top" Width="132"/>
+        <TextBox  x:Name="txtBox_Diff" Text="{Binding PowerString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="False" HorizontalAlignment="Left" Height="23" Margin="406,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
 
     </Grid>
