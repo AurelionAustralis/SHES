@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,10 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Communication\ISHESToComponentsQueues.cs" />
+    <Compile Include="Communication\Request.cs" />
+    <Compile Include="Communication\Response.cs" />
+    <Compile Include="Communication\SHESToComponentsQueueMock.cs" />
+    <Compile Include="Communication\SHESToComponentsQueues.cs" />
     <Compile Include="ElementLists\BatteryList.cs" />
     <Compile Include="ElementLists\ConsumersList.cs" />
     <Compile Include="GlobalClock.cs" />
-    <Compile Include="ISHES.cs" />
+    <Compile Include="SHES.cs" />
+    <Compile Include="SHES_Components\UtilityConsumption.cs" />
     <Compile Include="SHES_Components\Battery.cs" />
     <Compile Include="SHES_Components\Consumer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

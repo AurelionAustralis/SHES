@@ -1,4 +1,5 @@
-﻿using Common.SHES_Components;
+﻿using Common.Communication;
+using Common.SHES_Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,19 @@ namespace Common.Wrappers
     {
         public List<SolarPanel> List { get; set; }
         public double SunPower { get; set; }
+        public ISHESToComponentsQueues Queues { get; set; }
+
+        public SolarPanelList(ref ISHESToComponentsQueues queues)
+        {
+            List = new List<SolarPanel>();
+            Queues = queues;
+            Task.Factory.StartNew(() => SolarThread());
+        }
 
         public SolarPanelList()
         {
             List = new List<SolarPanel>();
+            Task.Factory.StartNew(() => SolarThread());
         }
 
         public double Generate()
@@ -25,6 +35,28 @@ namespace Common.Wrappers
                 retVal += solarPanel.MaxPower * SunPower;
             }
             return retVal;
+        }
+
+        public async void SolarThread()
+        {
+            while (true)
+            {
+                while (Queues.SolarReponses.Count > 0)
+                {
+                    Response response;
+                    if(Queues.SolarReponses.TryDequeue(out response))
+                    {
+                        this.SunPower = response.Value;
+                    }
+                }
+
+                double retVal = Generate();
+
+                Request r = new Request(retVal, "");
+
+                Queues.BatteryRequest.Enqueue(r);
+                await Task.Delay(GlobalClock.Instance.Second);
+            }
         }
     }
 }

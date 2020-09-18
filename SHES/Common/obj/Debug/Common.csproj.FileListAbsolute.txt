@@ -10,3 +10,12 @@ C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\obj\Debug\Common.csprojAssembly
 C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\obj\Debug\Common.dll
 C:\Users\MilosTodorovic\Desktop\SHES\SHES\Common\obj\Debug\Common.pdb
+C:\Users\Radovan\Desktop\SHES\SHES\Common\bin\Debug\Common.dll
+C:\Users\Radovan\Desktop\SHES\SHES\Common\bin\Debug\Common.pdb
+C:\Users\Radovan\Desktop\SHES\SHES\Common\obj\Debug\Common.dll
+C:\Users\Radovan\Desktop\SHES\SHES\Common\obj\Debug\Common.pdb
+C:\Users\ervin\Desktop\SHES\Common\bin\Debug\Common.dll
+C:\Users\ervin\Desktop\SHES\Common\bin\Debug\Common.pdb
+C:\Users\ervin\Desktop\SHES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\ervin\Desktop\SHES\Common\obj\Debug\Common.dll
+C:\Users\ervin\Desktop\SHES\Common\obj\Debug\Common.pdb
