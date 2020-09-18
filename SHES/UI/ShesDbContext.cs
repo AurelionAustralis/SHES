@@ -1,4 +1,5 @@
-﻿using Common.SHES_Components;
+﻿using Common;
+using Common.SHES_Components;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -14,7 +15,9 @@ namespace UI
         public DbSet<Consumer> Consumers { get; set; }
         public DbSet<SolarPanel> SolarPanels { get; set; }
         public DbSet<Battery> Battery { get; set; }
-        public ShesDbContext() : base("SHES")
+        public DbSet<UtilityConsumption> Measurements { get; set; }
+
+        public ShesDbContext() : base("SHES_Septembar")
         {
 
         }

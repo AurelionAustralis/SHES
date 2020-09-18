@@ -65,14 +65,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BindableBase.cs" />
-    <Compile Include="CurrentPower.cs" />
-    <Compile Include="Migrations\202009081231427_Migration.cs" />
-    <Compile Include="Migrations\202009081231427_Migration.designer.cs">
-      <DependentUpon>202009081231427_Migration.cs</DependentUpon>
+    <Compile Include="Migrations\202009200950437_Migration.cs" />
+    <Compile Include="Migrations\202009200950437_Migration.designer.cs">
+      <DependentUpon>202009200950437_Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009201559206_MeasurementsAdded.cs" />
+    <Compile Include="Migrations\202009201559206_MeasurementsAdded.designer.cs">
+      <DependentUpon>202009201559206_MeasurementsAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="SHES.cs" />
     <Compile Include="ShesDbContext.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -101,8 +102,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\202009081231427_Migration.resx">
-      <DependentUpon>202009081231427_Migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202009200950437_Migration.resx">
+      <DependentUpon>202009200950437_Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009201559206_MeasurementsAdded.resx">
+      <DependentUpon>202009201559206_MeasurementsAdded.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
