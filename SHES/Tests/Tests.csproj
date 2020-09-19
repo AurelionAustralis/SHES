@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ElementsListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestCommunication.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

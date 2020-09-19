@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using Common;
-using Common.ElementLists;
+using Common.Wrappers;
 using Common.SHES_Components;
 using Common.Wrappers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -19,7 +19,6 @@ namespace Tests
             batteryList.List.Add(b);
 
             var consumption = batteryList.Consume();
-            //double expected = -0.0166666666666667;
 
             Assert.IsTrue(consumption < 0);
         }
